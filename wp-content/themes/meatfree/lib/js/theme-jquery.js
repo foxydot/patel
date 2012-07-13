@@ -11,4 +11,11 @@ jQuery(document).ready(function($) {
 	$('tr td:last-child').addClass('last-child');
 	$('tr td:nth-child(even)').addClass('even');
 	$('tr td:nth-child(odd)').addClass('odd');
+	
+	//special for lifestyle
+	$('#subnav li').after(function(){
+		if(!$(this).hasClass('last-child') && $(this).css('display')!='none'){
+			return '<li class="separator">|</li>';
+		}
+	});
 });

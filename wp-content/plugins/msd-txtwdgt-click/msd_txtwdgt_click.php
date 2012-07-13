@@ -193,4 +193,5 @@ class MSD_Widget_Text extends WP_Widget {
 
 	
 	add_action('widgets_init',array('MSD_Widget_Text','init'),10);
+	add_filter('widget_text', 'do_shortcode');
 ?>
