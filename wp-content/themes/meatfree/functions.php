@@ -6,6 +6,7 @@ require_once( get_template_directory() . '/lib/init.php' );
 define( 'CHILD_THEME_NAME', 'Meat Free' );
 define( 'CHILD_THEME_URL', 'http://msdlab.com' );
 
+add_image_size('home-feature',270,150,true);
 /** Add Viewport meta tag for mobile browsers */
 add_action( 'genesis_meta', 'add_viewport_meta_tag' );
 function add_viewport_meta_tag() {

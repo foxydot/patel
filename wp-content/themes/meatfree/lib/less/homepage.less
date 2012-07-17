@@ -13,9 +13,94 @@
 	width: 100%;
 	float: none;
 	display: block;
+	background: url(../../images/bkg-quote.jpg) repeat-x center top;
+	.wrap{
+		padding: 14px 0;
+		font-size: 24px;
+		.ptsans;
+		color: #fff;
+		.readmore {
+			display: inline-block;
+			margin: 0 12px;
+			.redbutton;
+			}
+		}
 	}
 #hp-bot {
 	width: 100%;
 	float: none;
 	display: block;
+	background: url(../../images/bkg-lower.png) repeat-x center top #fff;
+	#widgets-one {
+		width: 640px;
+		float: left;
+		margin: 30px 0;
+		.widget{
+			width: 284px;
+			margin-right: 30px;
+			display: inline-block;
+		}
+		.widget_sp_image{
+			font-size: 12px;
+			a.widget_sp_image-image-link{
+				display: block;
+				border: 1px solid #B09A69;
+				.box-shadow(0 1px 2px #999);
+				img{
+					border: 6px solid #fff;
+				}
+			}
+			.widgettitle {
+				color: @green;
+				border-top: 8px solid @ltgreen;
+				margin-top: 12px;
+				padding: 12px 0;
+				font-size: 18px;
+				}
+			.widget_sp_image-fancy-link {
+				font-size: 14px;
+				font-weight: bold;
+				margin: 12px 0;
+				display: block;
+			}
+		}
+	}
+	#widgets-two {
+		margin-top: 20px;
+		width: 280px;
+		padding: 20px;
+		float: right;
+		background: url(../../images/bkg-hp-w2.png) no-repeat center top;
+		.widgettitle {
+			font-size: 24px;
+			color: @red;
+		}
+		.byline {
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: .5em 0;
+		}
+	}
+	#widgets-three {
+		width: 640px;
+		float: left;
+		.widget {
+			background: url(../../images/bkg-hp-w3.png) no-repeat left center;
+			margin: 0 0 30px 0;
+			color: #fff;
+			font-size: 16px;
+			padding: 40px 20px;
+			.widgettitle {
+				font-size:30px;
+				color: @yellow;
+			}
+		}
+	}
+	.wrap {
+		background: url(../../images/bkg-hp-mid-btm.png) no-repeat center bottom;
+	}
+	.wrap:after{
+    .clearfix;
+	}
 }
+#inner {display:none;}

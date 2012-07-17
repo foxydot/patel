@@ -89,7 +89,7 @@ ol {
 
 a,
 a:visited {
-	color: #0d72c7;
+	color: @green;
 	text-decoration: none;
 }
 
@@ -130,6 +130,7 @@ body {
 .wrap {
 	width: 960px;
 	margin: 0 auto;
+	position: relative;
 }
 
 /* Header
@@ -363,7 +364,7 @@ ul.menu li.sfHover ul,
 .menu li a .sf-sub-indicator,
 .menu li li a .sf-sub-indicator,
 .menu li li li a .sf-sub-indicator {
-	background: url(images/icon-plus.png) no-repeat;
+	background: url(../../images/icon-plus.png) no-repeat;
 	height: 16px;
 	position: absolute;
 	right: 8px;
@@ -655,17 +656,17 @@ h1 {
 h2,
 h2 a,
 h2 a:visited {
-	font-size: 28px;
+	font-size: 18px;
 }
 
 h2 a,
 h2 a:visited {
-	color: #333;
+	color: @green;
 	.ptsans;
 }
 
 h2 a:hover {
-	color: #0d72c7;
+	color: @red;
 	text-decoration: none;
 }
 
@@ -994,9 +995,8 @@ p.wp-caption-text {
 .featuredpage .page,
 .featuredpost .post {
 	border-bottom: 1px solid #ddd;
-	margin: 0 0 5px;
+	margin: 0 0 1em;
 	overflow: hidden;
-	padding: 0 15px 10px;
 }
 
 #footer-widgets .featuredpage .page,
@@ -1035,7 +1035,7 @@ input[type="text"]{
 	}
 input[type="button"],
 input[type="submit"] {
-	background: url(images/gradient.png) 0 0;
+	background: url(../../images/gradient.png) 0 0;
 	border: 1px solid #ccc;
 	cursor: pointer;
 	line-height: 19px;
@@ -1045,7 +1045,7 @@ input[type="submit"] {
 
 input:hover[type="button"],
 input:hover[type="submit"] {
-	background: url(images/gradient.png) 0 -33px;
+	background: url(../../images/gradient.png) 0 -33px;
 	text-decoration: none;
 }
 
@@ -1184,17 +1184,25 @@ input.searchsubmit:hover {
 .footer-widgets-1 {
 	float: left;
 	margin: 0 30px 0 0;
-	width: 280px;
+	width: 220px;
 }
 
 .footer-widgets-2 {
 	float: left;
-	width: 280px;
+	width: 400px;
 }
 
 .footer-widgets-3 {
+	float: left;
+	width: 400px;
+}
+
+.footer-widgets-4 {
 	float: right;
-	width: 280px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 245px;
 }
 
 
@@ -1407,7 +1415,7 @@ div.gform_wrapper .gform_footer {
 
 	.menu li li a .sf-sub-indicator,
 	.menu li li li a .sf-sub-indicator {
-		background: url(images/icon-plus-white.png) right no-repeat;
+		background: url(../../images/icon-plus-white.png) right no-repeat;
 	}
 
 	.menu-primary li li a,
@@ -1568,4 +1576,51 @@ div.gform_wrapper .gform_footer {
 		margin: 0;
 	}
 
+}
+
+/* Social Media */
+
+.social-media {
+	position: relative;
+	float: left;
+	text-align: right;
+	padding: 6px 0;
+	}
+.social-media a {
+	float: left;
+	display: block;
+	background: url(../../images/socialmedia.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	margin: 2px;
+	position: relative;
+	text-indent: 9999px;
+	text-decoration: none;
+	}
+.social-media a.fb {
+	background-position: 0px 0px;
+}
+.social-media a.tw {
+	background-position: -144px 0px;
+}
+.social-media a.fl {
+	background-position: -24px 0;
+}
+.social-media a.li {
+	background-position: -72px 0;
+}
+.social-media a.yt {
+	background-position: -192px 0;
+}
+.social-media a.gl {
+	background-position: -48px 0;
+}
+.social-media a.rss {
+	background-position: -96px 0;
+}
+.social-media a.st {
+	background-position: -120px 0;
+}
+.social-media a.wp {
+	background-position: -168px 0;
 }

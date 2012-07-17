@@ -1,10 +1,37 @@
+@import 'elements';
 /* Import Fonts
 ------------------------------------------------------------ */
 
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
+@red: #B71C2B;
+@green: #365A00;
+@ltgreen: #87BB0A;
+	@yellow: #FEFB3D;
+
 /* Font Stacks */
 .ptsans {
 	font-family: "PT Sans", "Trebuchet MS", Calibri, sans-serif;
+}
+.arial {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.redbutton {
+	.gradient(#940D1B,#940D1B,#BE1D2D);
+	.rounded(5px);
+	padding: 6px 24px;
+	.arial;
+	font-size: 16px;
+	text-shadow: 1px 1px 2px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+.clearfix {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
